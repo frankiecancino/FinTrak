@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+help	TRUE	/	FALSE	1999999999	_zendesk_session	BAh7BkkiD3Nlc3Npb25faWQGOgZFVEkiJWEwOTQwOTMyZDNhYjk1ODliYzQ2NWM0ZDUwYmM1ZmJhBjsAVA%3D%3D--34588f116ff8842212c92b253ebd3dcf2c7dfa6a
+help	TRUE	/	FALSE	1999999999	_zendesk_shared_session	-WmVWTjlGT3pDdXZ6K0lxSnVDQVlzSTJJbDVwNmRCcGtsbUhZS0JzUmZQR0dLemZtc3NwV0lNaXlpSGttL2lySE5zYmRHSkZYZkdOc2EvTFB2cDJJZG11dzVsU3R6UU1lRUREckQ5NnEwZEU9LS1rUnRyN2grUUhRNWlPM1pGaTduTFh3PT0%3D--60ba8961c2e7c3513638c3d97ccb753978255bb9
+

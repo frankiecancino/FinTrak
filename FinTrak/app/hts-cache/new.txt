@@ -1,0 +1,3 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+12:02:06	1/1	---M--	404	error ('Not%20Found')	text/text	date:Sat,%2024%20Mar%202018%2016:57:03%20GMT	http://help/robots.txt		(from )
+12:02:07	217/217	---M--	301	error ('Moved%20Permanently')	text/html	date:Sat,%2024%20Mar%202018%2016:57:03%20GMT	http://help/	help/index.html	(from )
