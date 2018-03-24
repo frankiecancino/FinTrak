@@ -1,1 +1,1 @@
-web: gunicorn FinTrak:app
+web: gunicorn app:app
