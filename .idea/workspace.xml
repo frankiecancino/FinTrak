@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f75921a8-7d0a-4895-9810-e07cd54cc4c2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/FinTrak/app/templates/index.html" afterPath="$PROJECT_DIR$/FinTrak/app/templates/index.html" />
-    </list>
+    <list default="true" id="f75921a8-7d0a-4895-9810-e07cd54cc4c2" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,11 +11,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FinTrak/app/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
               <caret line="19" column="85" lean-forward="false" selection-start-line="19" selection-start-column="85" selection-end-line="19" selection-end-column="85" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FinTrak/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -89,19 +97,6 @@
               <item name="FinTrak" type="b2602c69:ProjectViewProjectNode" />
               <item name="FinTrak" type="462c0819:PsiDirectoryNode" />
               <item name="FinTrak" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FinTrak" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FinTrak" type="462c0819:PsiDirectoryNode" />
-              <item name="FinTrak" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FinTrak" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FinTrak" type="462c0819:PsiDirectoryNode" />
-              <item name="FinTrak" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -247,6 +242,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="19" column="85" lean-forward="false" selection-start-line="19" selection-start-column="85" selection-end-line="19" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FinTrak/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
