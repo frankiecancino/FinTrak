@@ -1,7 +1,5 @@
-from flask import Flask, render_template
-
-app = Flask(__name__, static_url_path='')
-
+from flask import render_template
+from app import app
 
 @app.route('/')
 @app.route('/index')
