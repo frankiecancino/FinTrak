@@ -16,7 +16,6 @@ entrypoints==0.2.2
 enum34==1.1.6
 Flask==0.12.2
 funcsigs==1.0.2
-functools32==3.2.3.post2
 futures==3.2.0
 gast==0.2.0
 grpcio==1.10.0
