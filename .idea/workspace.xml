@@ -2,15 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f75921a8-7d0a-4895-9810-e07cd54cc4c2" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/FinTrak/app/static/background1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/FinTrak/app/static/background2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/FinTrak/app/static/background3.jpg" />
-      <change beforePath="$PROJECT_DIR$/.idea/FinTrak.iml" afterPath="$PROJECT_DIR$/.idea/FinTrak.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/FinTrak/app/css/materialize.css" afterPath="$PROJECT_DIR$/FinTrak/app/static/css/materialize.css" />
-      <change beforePath="$PROJECT_DIR$/FinTrak/app/css/materialize.min.css" afterPath="$PROJECT_DIR$/FinTrak/app/static/css/materialize.min.css" />
-      <change beforePath="$PROJECT_DIR$/FinTrak/app/js/materialize.js" afterPath="$PROJECT_DIR$/FinTrak/app/static/js/materialize.js" />
-      <change beforePath="$PROJECT_DIR$/FinTrak/app/js/materialize.min.js" afterPath="$PROJECT_DIR$/FinTrak/app/static/js/materialize.min.js" />
       <change beforePath="$PROJECT_DIR$/FinTrak/app/templates/index.html" afterPath="$PROJECT_DIR$/FinTrak/app/templates/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,8 +16,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FinTrak/app/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+            <state relative-caret-position="252">
+              <caret line="19" column="85" lean-forward="false" selection-start-line="19" selection-start-column="85" selection-end-line="19" selection-end-column="85" />
               <folding />
             </state>
           </provider>
@@ -211,8 +202,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="778" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="R Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -253,8 +245,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FinTrak/app/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        <state relative-caret-position="252">
+          <caret line="19" column="85" lean-forward="false" selection-start-line="19" selection-start-column="85" selection-end-line="19" selection-end-column="85" />
           <folding />
         </state>
       </provider>
