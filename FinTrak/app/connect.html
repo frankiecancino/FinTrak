@@ -26,6 +26,15 @@
       <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
       </script>  
 
+      <script type="text/javascript">
+          $(document).ready(function(){
+            $("p").hide();
+              $('input[type="file"]').change(function(){
+                  $("p").show();
+              });
+          });
+      </script>
+
 <!-- CORE CSS-->
   
   <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection">
@@ -35,7 +44,6 @@
   <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
   <link href="js/plugins/prism/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
   <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
-  
 
       <title>Connect your financial institution</title>
    </head>
@@ -54,11 +62,13 @@
             <nav class="cyan">
                <div class = "nav-wrapper">
                   <a href = "#" class = "brand-logo" style="padding-left: 12px">
-                     <div class="row left">
+                     <div id="OpenImgUpload" class="row left">
                         <img class="responsive-img circle col s2" src="images/login-logo.png" style="padding-top: 0"/>
                      </div>
                   </a>
                   <ul id = "nav-mobile" class = "right hide-on-med-and-down">
+                     <li><i class="material-icons">vpn_key</i></li>
+                     <li><a href="">Authenticate</a></li>
                      <li class="active"><i class="material-icons active">add_circle_outline</i></li>
                      <li class="active"><a href = "connect.html" class="active">Connect your Financial Institution</a></li>
                      <li><i class="material-icons">monetization_on</i></li>
@@ -68,6 +78,14 @@
             </nav>
          </div>
       </div>
+      <center>
+      <p id="verified" align="right">Key Verified <i class="material-icons">check_circle</i><p>
+      <input type="file" id="imgupload" style="display:none"/> 
+      <script type="text/javascript">$('#OpenImgUpload').click(function(){ $('#imgupload').trigger('click'); });</script>
+
+         <a class="btn-large " style="font-size: 20px;"><i class="material-icons">add_circle</i>  Connect your bank</a>
+         <a class="btn-large red" style="font-size: 20px;"><i class="material-icons">indeterminate_check_box</i> Revoke data access</a>
+      </center>
       <!-- jQuery Library -->
      <script type="text/javascript" src="js/plugins/jquery-1.11.2.min.js"></script>
      <!--materialize js-->
@@ -81,6 +99,15 @@
     <script type="text/javascript" src="js/plugins.min.js"></script>
     <!--custom-script.js - Add your own theme custom JS-->
     <script type="text/javascript" src="js/custom-script.js"></script>
+    <style type="text/css">
+       #upload{
+         display: none;
+      }
 
+      p#verified{
+         color:green;
+         font-weight: 600;
+      } ​
+    </style>
    </body>  
 </html>
