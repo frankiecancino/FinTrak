@@ -17,7 +17,7 @@
      <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
      <!-- For Windows Phone -->
 
-      <meta name = "viewport" content = "width = device-width, initial-scale = 1">      
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
       <link rel = "stylesheet"
          href = "https://fonts.googleapis.com/icon?family=Material+Icons">
       <link rel = "stylesheet"
@@ -26,6 +26,16 @@
          src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
       <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
       </script>  
+
+      <script type="text/javascript">
+         $(document).ready(function(){
+            if(localStorage.getItem('revoke') === 'clicked'){
+               $("#graph").hide();
+               $("#nograph").show();
+               localStorage.removeItem('revoke');
+         }
+          });
+      </script>
 
 <!-- CORE CSS-->
   
@@ -69,6 +79,19 @@
             </nav>
          </div>
       </div>
+
+      <section id="graph">
+         <div  class="container">
+            <img src="images/Demo.png" class="responsive-img">
+         </div>
+      </section>
+
+      <section id="nograph">
+         <div  class="container">
+            <img src="images/Deactivated.png" class="responsive-img">
+         </div>
+      </section>
+
       <!-- jQuery Library -->
      <script type="text/javascript" src="js/plugins/jquery-1.11.2.min.js"></script>
      <!--materialize js-->
