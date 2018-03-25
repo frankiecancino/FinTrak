@@ -3,6 +3,7 @@ from pandas import Series
 from pandas import concat
 from pandas import read_csv
 from sklearn.preprocessing import MinMaxScaler
+from sklearn.model_selection import train_test_split
 from keras.models import Sequential, model_from_json
 from keras.layers import LSTM, Dense
 from matplotlib import pyplot, axis
@@ -77,15 +78,17 @@ def forecast_lstm(model, batch_size, X):
 def experiment(repeats, series, timesteps):
     # transform data to be stationary
     raw_values = series.values
+
+    #training data
+    n_train = 27814
+    n_test = 28
+    raw_test_values = raw_values[-28:]
+
     diff_values = difference(raw_values, 1)
-    # transform data to be supervised learning
     supervised = timeseries_to_supervised(diff_values, timesteps)
     supervised_values = supervised.values[timesteps:, :]
+
     # split data into train and test-sets
-    n_train = (0.995 * len(supervised_values))
-    n_test = (0.005 * len(supervised_values))
-    n_train = int(n_train)
-    n_test = int(n_test)
     train, test = supervised_values[:n_train, :], supervised_values[-n_test:, :]
     # transform the scale of the data
     scaler, train_scaled, test_scaled = scale(train, test)
@@ -124,6 +127,9 @@ def experiment(repeats, series, timesteps):
     # # serialize weights to HDF5
     # lstm_model.save_weights("model.h5")
 
+    raw_test_values = 0
+    predictions = 0
+    pyplot.plot(raw_test_values, label="Actual")
     pyplot.plot(predictions, label="Forecast")
     pyplot.ylabel('Amount')
     pyplot.xlabel('Transaction')
