@@ -29,10 +29,27 @@
       <script type="text/javascript">
           $(document).ready(function(){
             $("p").hide();
+            $("#confirmed").hide();
               $('input[type="file"]').change(function(){
                   $("p").show();
               });
+
+            $('#dialog_link').click(function () {
+               $('#dialog').dialog('open');
+               return false;
+             });
+
+            $('img').click(function(){
+               $('.selected').removeClass('selected'); // removes the previous selected class
+               $(this).addClass('selected'); // adds the class to the clicked image
+             });
+
+            $('#close-btn').click(function(){
+                $("#confirmed").fadeIn(3000);
+             });
           });
+
+          $('#addbank').leanModal();
       </script>
 
 <!-- CORE CSS-->
@@ -73,19 +90,50 @@
                      <li class="active"><a href = "connect.html" class="active">Connect your Financial Institution</a></li>
                      <li><i class="material-icons">monetization_on</i></li>
                      <li><a href = "forecast.html">Finanical Forcast</a></li>
-                  </ul>
+                  </ul> 
                </div>
             </nav>
          </div>
       </div>
       <center>
-      <p id="verified" align="right">Key Verified <i class="material-icons">check_circle</i><p>
+      <p id="verified" style="font-size: 20px;">Key Verified  <i class="material-icons">check_circle</i><p>
       <input type="file" id="imgupload" style="display:none"/> 
       <script type="text/javascript">$('#OpenImgUpload').click(function(){ $('#imgupload').trigger('click'); });</script>
-
-         <a class="btn-large " style="font-size: 20px;"><i class="material-icons">add_circle</i>  Connect your bank</a>
+         <a href="#modal1" id="addbank" class="btn-large modal-trigger" style="font-size: 20px;"><i class="material-icons">add_circle</i>  Connect your bank</a>
          <a class="btn-large red" style="font-size: 20px;"><i class="material-icons">indeterminate_check_box</i> Revoke data access</a>
       </center>
+
+      <div id=confirmed>
+         <center>
+             <div style="margin-top: 100px; font-size: 30px; color:#33cc33; font-weight: 600" > Your financial data has securely been written to the blockchain :)</div>
+            <img src="images/institution.png" height="400px" width="400px" style="padding: 50px; padding-bottom: 20px">
+            <img src="images/arrow.png" height="250px" width="200px" style="padding-bottom: 50px">            
+            <img src="images/blockchain.gif" height="325px" width=600px style="padding: 50px">
+         </center>
+      </div>
+
+      <div class="row section">
+        <div class="col">
+          <!-- Modal Trigger -->
+          <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+        </div>
+      </div>
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Select your bank</h4>
+          <p>
+             <img src="images/Chase.jpg" height="225px" width=225px style="padding: 10px">
+             <img src="images/wells.png" height="225px" width=225px style="padding: 10px">
+             <img src="images/BCU.png" height="225px" width=225px style="padding: 10px">
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a id="close-btn" href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Select</a>
+        </div>
+      </div>
+
+
       <!-- jQuery Library -->
      <script type="text/javascript" src="js/plugins/jquery-1.11.2.min.js"></script>
      <!--materialize js-->
@@ -108,6 +156,11 @@
          color:green;
          font-weight: 600;
       } ​
+
+      img{border:solid 1px red; margin:10px;}
+      .selected{
+         box-shadow:0px 12px 22px 1px #333;
+      }
     </style>
    </body>  
 </html>
